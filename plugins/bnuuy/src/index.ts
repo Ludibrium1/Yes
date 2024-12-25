@@ -7,7 +7,7 @@ const uploadModule = findByProps("uploadLocalFiles");
 
 var newContent = msg.content.replaceAll('([bB])unny', '$1nuuy');
 
-var	msg.content = newContent;
+msg.content = newContent;
 
 const unpatchMessage = before("sendMessage", messageModule, (args) => modify(args[1]));
 const unpatchMessage2 = before("uploadLocalFiles", uploadModule, (args) => modify(args[0].parsedMessage));

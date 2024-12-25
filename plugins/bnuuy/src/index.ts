@@ -2,10 +2,9 @@ import { findByProps } from "@vendetta/metro";
 import { before } from "@vendetta/patcher";
 import { Message } from "./def";
 
-
+export function onLoad() {
 const messageModule = findByProps("sendMessage", "receiveMessage");
 const uploadModule = findByProps("uploadLocalFiles");
-export function onUnload() {
 var newContent = msg.content.replaceAll('([bB])unny', '$1nuuy');
 
 msg.content = newContent;

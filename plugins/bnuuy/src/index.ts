@@ -10,7 +10,7 @@ const hasBunny = [bB][uU][nN][nN][yY];
 function modify(msg: Message) {
     var newContent = msg.content
     if (msg.content.match(hasBunny)) {
-        newContent = msg.content.replaceAll(([bB])[uU][nN][nN][yY], '$1nuuy'); }
+        newContent = msg.content.replaceAll(([bB])unny, '$1nuuy'); }
 
 	msg.content = newContent;
 

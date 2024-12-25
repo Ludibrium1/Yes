@@ -1,0 +1,14 @@
+{
+    "name": "BnuuyFix",
+    "description": "Fixes your incorrect usage of bnuuy's branding™",
+    "authors": [
+        {
+            "name": "Ludibrium",
+            "id": "548844626841174038"
+        }
+    ],
+    "main": "src/index.ts",
+    "vendetta": {
+        "icon": "img_account_sync_github_white"
+    }
+}

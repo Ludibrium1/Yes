@@ -4,13 +4,13 @@ import { Message } from "./def";
 
 const messageModule = findByProps("sendMessage", "receiveMessage");
 const uploadModule = findByProps("uploadLocalFiles");
-const hasBunny = [bB][uU][nN][nN][yY];
+const hasBunny = /Bunny/i;
 
 
 function modify(msg: Message) {
     var newContent = msg.content
     if (msg.content.match(hasBunny)) {
-        newContent = msg.content.replaceAll(/([bB])unny/, '$1nuuy'); }
+        newContent = msg.content.replaceAll(/(b)unny/gi, '$1nuuy'); }
 
 	msg.content = newContent;
 

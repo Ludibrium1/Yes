@@ -4,7 +4,7 @@ import { Message } from "./def";
 
 const messageModule = findByProps("sendMessage", "receiveMessage");
 const uploadModule = findByProps("uploadLocalFiles");
-const regex = /[\* `~_\-\\"'\.,]/
+const regex = "[\* `~_\-\\"'\.,]*"
 const hasBunny = /B${regex}u${regex}n${regex}n${regex}y/i;
 
 
